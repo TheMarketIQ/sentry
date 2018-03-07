@@ -11,7 +11,7 @@ import Pagination from '../components/pagination';
 import CompactIssue from '../components/compactIssue';
 import EventUserReport from '../components/events/userReport';
 import {t, tct} from '../locale';
-import withEnvironment from '../utils/withEnvironment';
+import withEnvironmentInQueryString from '../utils/withEnvironmentInQueryString';
 
 const ProjectUserReports = createReactClass({
   displayName: 'ProjectUserReports',
@@ -256,4 +256,4 @@ const ProjectUserReports = createReactClass({
   },
 });
 
-export default withEnvironment(ProjectUserReports);
+export default withEnvironmentInQueryString(ProjectUserReports);

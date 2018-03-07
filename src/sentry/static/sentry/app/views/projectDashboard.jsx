@@ -2,12 +2,11 @@ import PropTypes from 'prop-types';
 import React from 'react';
 import createReactClass from 'create-react-class';
 import {Link} from 'react-router';
-
 import EventList from './projectDashboard/eventList';
 import ProjectState from '../mixins/projectState';
 import ProjectChart from './projectDashboard/chart';
 import {t} from '../locale';
-import withEnvironment from '../utils/withEnvironment';
+import withEnvironmentInQueryString from '../utils/withEnvironmentInQueryString';
 
 const PERIOD_HOUR = '1h';
 const PERIOD_DAY = '1d';
@@ -165,4 +164,4 @@ const ProjectDashboard = createReactClass({
   },
 });
 
-export default withEnvironment(ProjectDashboard);
+export default withEnvironmentInQueryString(ProjectDashboard);
